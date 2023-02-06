@@ -1,0 +1,19 @@
+         
+
+   
+
+var1 = 'Message 1'
+var2 = 1234656
+straight text
+var3 = 'Banana'
+
+var4 ='hey hey'
+
+
+
+
+
+wdawdawd
+
+
+
