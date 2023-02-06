@@ -1,0 +1,57 @@
+C:\Users\kylec\PycharmProjects\swisspy\venv\Scripts\python.exe "C:/Users/kylec/Documents/GitHub/swisspy/scripts/txtgrabber/txtgrabber example usage.py"
+Get the file path used to create the object:
+example_object.path
+C:\Users\kylec\Documents\GitHub\swisspy\resources\txtgrabber\Test file for txtgrabber.txt
+---------------------
+Get the index of the first non-blank row:
+example_object.first_not_blank
+4
+---------------------
+Get the index of the last non-blank row:
+example_object.last_not_blank
+16
+---------------------
+Get the count of all rows in lines after all changes:
+example_object.final_line_count
+12
+---------------------
+Get the count of all rows before any changes:
+example_object.full_line_count
+19
+---------------------
+Get all lines from the txt file in a list without changes:
+example_object.full_lines
+['         ', '', '   ', '', "var1 = 'Message 1'", 'var2 = 1234656', 'straight text', "var3 = 'Banana'", '', "var4 ='hey hey'", '', '', '', '', '', 'wdawdawd', '', '', '']
+---------------------
+Get all lines from the txt file after all changes:
+example_object.lines
+["var1 = 'Message 1'", 'var2 = 1234656', 'straight text', "var3 = 'Banana'", '', "var4 ='hey hey'", '', '', '', '', '', 'wdawdawd']
+---------------------
+Get a certain line in order from the txt file after changes:
+example_object.get_line(2)
+var2 = 1234656
+---------------------
+Print out the contents of the file line by line, defaulting to the changed content but with a raw option:
+example_object.print_out(raw=False)
+var1 = 'Message 1'
+var2 = 1234656
+straight text
+var3 = 'Banana'
+
+var4 ='hey hey'
+
+
+
+
+
+wdawdawd
+
+---------------------
+Output a copy of the file with the changes:
+print(example_object.file_output('F:\User\Documents',
+                                 suffix=' - Updated test file',
+                                 overwrite_in_place=True))
+File output to C:\Users\kylec\Documents\GitHub\swisspy\resources\txtgrabber\Test file for txtgrabber - Updated test file.txt
+---------------------
+
+Process finished with exit code 0
