@@ -47,7 +47,7 @@ run in sequence, each recursively taking the result of the previous as its input
 
 """
 
-# A list containing 3 item tuples to assign determine actions
+# A list containing 3 item tuples to assign specific renaming actions
 regex_targets = [('prefix', r'\sMusic', 'IsMusic - '),
                  ('replace', r'\(HD\)', ''),
                  ('replace', r'Sound', 'Noises'),
