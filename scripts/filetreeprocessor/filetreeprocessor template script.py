@@ -47,7 +47,7 @@ run in sequence, each recursively taking the result of the previous as its input
 
 """
 
-# A list containing tuples with a regex to match against and the replacement to insert
+# A list containing 3 item tuples to assign determine actions
 regex_targets = [('prefix', r'\sMusic', 'IsMusic - '),
                  ('replace', r'\(HD\)', ''),
                  ('replace', r'Sound', 'Noises'),
