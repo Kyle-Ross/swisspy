@@ -48,13 +48,13 @@ Includes optional trim, cleaning and checking functionality easily configured in
 
 Any amount of these 3 options can be added and run against each file name in each run of the script.
     
-**replace**
+replace
 - Identify and replace a part of the file name based on a regex pattern
 
-**prefix**
+prefix
 - Add a prefix to file names which match a provided regex pattern
     
-**suffix**
+suffix
 - Add a suffix to file names which match a provided regex pattern
 
 For an example of a list of renaming actions that can be run simulaneously across a FileTree object, see the template in the 'scripts/filetreeprocessor' folder.
