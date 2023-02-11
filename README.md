@@ -46,7 +46,7 @@ Taking a nested list of multiple regexes and action types, this method works thr
 
 Includes optional trim, cleaning and checking functionality easily configured in object initialisation code.
 
-Any amount of these 3 options can be added and run against each file name in each run of the script.
+Any amount of these 3 options can easily be added and run against the whole file tree in each run of the script.
     
 replace
 - Identify and replace a part of the file name based on a regex pattern
