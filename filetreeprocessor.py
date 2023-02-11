@@ -2,7 +2,7 @@ import os
 import re
 
 
-class FilesFolderClass:
+class FileTree:
     def __init__(self,
                  target_path,
                  type_filter_mode,
@@ -237,7 +237,7 @@ class FilesFolderClass:
                     iterated_folder_regex_changes.append(new_folder_name_final)
                 else:
                     iterated_new_folder_name_v1 = return_regex_replacement(regex_string, replacement_string,
-                                                                        iterated_folder_regex_changes[index - 1])
+                                                                           iterated_folder_regex_changes[index - 1])
                     iterated_new_folder_name_v2 = self.multi_space_remover(iterated_new_folder_name_v1)
                     iterated_new_folder_name_final = self.trimmer(iterated_new_folder_name_v2)
                     iterated_folder_regex_changes.append(iterated_new_folder_name_final)

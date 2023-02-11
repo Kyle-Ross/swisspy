@@ -28,3 +28,33 @@ Occasionally I find myself having to parse data stored in .txt files for whateve
 - Output the an updated .txt file with changes included
 
 Example usage can be seen in in the scripts folder.
+
+
+## filetreeprocessor
+
+Module for manipulating files and folders contained in a file tree. The script takes a folder as input and recursively gathers information on all files and subdirectories.
+
+It stores this information in a **FileTree** object, making it available for use in various methods.
+
+Only has functions to manipulate file names at current, but I would like to eventually add conditional file movements and copying.
+
+### Methods
+
+#### regex_rename
+
+Taking a nested list of multiple regexes and action types, this method works through the file tree recursively applying all renaming actions one after the other on relevant files in the tree.
+
+Includes optional trim, cleaning and checking functionality easily configured in object initialisation code.
+
+Any amount of these 3 options can be added and run against each file name in each run of the script.
+    
+**replace**
+- Identify and replace a part of the file name based on a regex pattern
+
+**prefix**
+- Add a prefix to file names which match a provided regex pattern
+    
+**suffix**
+- Add a suffix to file names which match a provided regex pattern
+
+For an example of a list of renaming actions that can be run simulaneously across a FileTree object, see the template in the 'scripts/filetreeprocessor' folder.
